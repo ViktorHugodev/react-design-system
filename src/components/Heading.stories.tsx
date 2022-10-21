@@ -1,11 +1,11 @@
-import { Text, IText } from './Text';
+import { Heading, IHeading } from './Heading';
 import { Meta, StoryObj } from '@storybook/react'
 
 export default {
-  title: 'Components/Text',
-  component: Text,
+  title: 'Components/Heading',
+  component: Heading,
   args: {
-    children: 'Faça login para continuar',
+    children: 'Ignite Lab',
     size: 'md'
   },
   argTypes: {
@@ -16,35 +16,34 @@ export default {
       }
     }
   }
-} as Meta<IText>
+} as Meta<IHeading>
 
-export const Default: StoryObj<IText> = {}
+export const Default: StoryObj<IHeading> = {}
 
-export const Large: StoryObj<IText> = {
+export const Large: StoryObj<IHeading> = {
   args: {
     size: 'lg'
   }
 }
-export const Small: StoryObj<IText> = {
+export const Small: StoryObj<IHeading> = {
   args: {
     size: 'sm'
   }
 }
-export const CustomText: StoryObj<IText> = {
+export const CustomText: StoryObj<IHeading> = {
   args: {
     asChild: true,
     children: (
-      <h1>Testando</h1>
+      <p>Testando</p>
     )
   },
-
   argTypes: {
-    asChild: {
+    children: {
       table: {
         disable: true
       }
     },
-    children: {
+    asChild: {
       table: {
         disable: true
       }

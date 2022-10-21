@@ -22,6 +22,10 @@ module.exports = {
       'cyan-500': '#81D8F7',
       'cyan-700': '#37c4f6',
 
+      'red-500': '#F44336',
+      'red-700': '#D32F2F',
+      'white-100': '#FFFF',
+
       'black': '#000000'
     },
     extend: {
